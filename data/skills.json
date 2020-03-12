@@ -1,0 +1,43 @@
+  
+{
+  "productStrategy": {
+    "title":          "Product Strategy",
+    "item1name":      "Product Design Sprints",
+    "item2name":      "McKinsey's Impact/Effort Mapping",
+    "item3name":      "Trello / Asana",
+    "item4name":      "Tools like Fullstory, Hotjar, and Google Analytics",
+    "item1img":       "source/images/emojis/scales.png",
+    "item1linkName":  "click here",
+    "item1link":      "#"
+  },
+  "userResearch": {
+    "title":          "User Research",
+    "item1name":      "User Interviews",
+    "item2name":      "A/B testing & user surveys",
+    "item3name":      "Persona Development",
+    "item4name":      "Customer Engagement",
+    "item1img":       "source/images/emojis/scales.png",
+    "item1linkName":  "click here",
+    "item1link":      "#"
+  },
+  "Design": {
+    "title":          "Design",
+    "item1name":      "Rapid Prototyping",
+    "item2name":      "Figma || Sketch",
+    "item3name":      "Visual Design",
+    "item4name":      "Whiteboarding",
+    "item1img":       "source/images/emojis/scales.png",
+    "item1linkName":  "click here",
+    "item1link":      "#"
+  },
+  "Development": {
+    "title":          "Development",
+    "item1name":      "HTML && CSS && (JavaScript)",
+    "item2name":      "Learning Quickly",
+    "item3name":      "Setting up for Success",
+    "item4name":      "Teamwork",
+    "item1img":       "source/images/emojis/scales.png",
+    "item1linkName":  "click here",
+    "item1link":      "#"
+  }
+}

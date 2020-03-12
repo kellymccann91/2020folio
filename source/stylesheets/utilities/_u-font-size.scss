@@ -1,0 +1,88 @@
+.u-font-size-1 {
+  font-size: $font-size-baby-shark;
+}
+
+.u-font-size-2 {
+  font-size: $font-size-child-shark;
+}
+
+.u-font-size-3 {
+  font-size: $font-size-teenage-shark;
+  letter-spacing: $font-size-teenage-shark * .02;
+}
+
+.u-font-size-4 {
+  font-size: $font-size-momma-shark;
+}
+
+.u-font-size-5 {
+  font-size: $font-size-pappa-shark;
+}
+
+.u-font-size-6 {
+  font-size: $font-size-gramma-shark;
+}
+
+.u-font-size-7 {
+  font-size: $font-size-grampa-shark;
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .u-font-size-1-mb {
+    font-size: $font-size-baby-shark;
+  }
+  
+  .u-font-size-2-mb {
+    font-size: $font-size-child-shark;
+  }
+  
+  .u-font-size-3-mb {
+    font-size: $font-size-teenage-shark;
+  }
+  
+  .u-font-size-4-mb {
+    font-size: $font-size-momma-shark;
+  }
+  
+  .u-font-size-5-mb {
+    font-size: $font-size-pappa-shark;
+  }
+  
+  .u-font-size-6-mb {
+    font-size: $font-size-gramma-shark;
+  }
+  
+  .u-font-size-7-mb {
+    font-size: $font-size-grampa-shark;
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  .u-font-size-1-dt {
+    font-size: $font-size-baby-shark;
+  }
+  
+  .u-font-size-2-dt {
+    font-size: $font-size-child-shark;
+  }
+  
+  .u-font-size-3-dt {
+    font-size: $font-size-teenage-shark;
+  }
+  
+  .u-font-size-4-dt {
+    font-size: $font-size-momma-shark;
+  }
+  
+  .u-font-size-5-dt {
+    font-size: $font-size-pappa-shark;
+  }
+  
+  .u-font-size-6-dt {
+    font-size: $font-size-gramma-shark;
+  }
+  
+  .u-font-size-7-dt {
+    font-size: $font-size-grampa-shark;
+  }
+}

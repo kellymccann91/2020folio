@@ -1,0 +1,39 @@
+.m-welcome {
+  height: 100vh;
+  width: 100vw;
+}
+
+.m-welcome-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: $spacing-shorter;
+  width: 24rem;
+}
+
+.m-welcome-title-image {
+  position: absolute;
+  top: -$spacing-shorter;
+}
+
+.m-welcome-title-text {
+  width: 16rem;
+}
+
+.m-welcome-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-welcome-header-line {
+  min-height: 10vmin;
+}
+
+.m-welcome-emoji-wave {
+  height: 4rem;
+}
+
+.m-welcome-subtext {
+  min-width: $spacing-biggest * 2;
+  width: $spacing-per-short;
+}

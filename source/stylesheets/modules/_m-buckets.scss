@@ -1,0 +1,69 @@
+.m-buckets {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    @media screen and (min-width: $breakpoint-large) {
+      flex-direction: row;
+    }
+  }
+  
+  .m-bucket {
+    background-repeat: no-repeat;
+    background-size: auto 55%;
+    display: flex;
+    flex-direction: column;
+    height: 7 * $spacing-bigger;
+    margin: 0;
+    width: 100%;
+  
+    @media screen and (min-width: $breakpoint-large) {
+      background-size: auto 60%;
+    }
+  
+    &.m-bucket--one {
+      align-self: flex-end;
+      background-color: $b-pr-green;
+      background-position: left bottom;
+      grid-column-end: 2;
+      grid-column-start: 1;
+  
+      @media screen and (min-width: $breakpoint-large) {
+        margin-right: $spacing-short;
+      }
+    }
+  
+    &.m-bucket--two {
+      align-self: flex-start;
+      background-color: $b-pr-green;
+      background-position: right bottom;
+      grid-column-end: 1;
+      grid-column-start: 2;
+      margin-top: $spacing-bigger;
+  
+      @media screen and (min-width: $breakpoint-large) {
+        margin-left: $spacing-short;
+        margin-top: 0;
+      }
+    }
+  }
+  
+  .m-bucket__content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 $spacing-shortest;
+    max-width: 28.5rem;
+    padding: $spacing-short;
+    text-align: center;
+  
+    @media screen and (min-width: $breakpoint-small) {
+      margin: 0;
+    }
+  }
+  
+  .m-bucket__cta .m-button--ghost {
+    background-color: $n-white;
+  }

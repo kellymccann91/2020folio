@@ -1,0 +1,30 @@
+.m-nav {
+  height: $spacing-big;
+}
+
+.m-nav-links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.m-nav-link {
+  max-height: 100%;
+  padding: $spacing-hairline;
+}
+
+.m-nav-items {
+  align-items: center;
+  display: flex;
+  justify-content: space-between; 
+  width: 90%;
+  @media (min-width: $breakpoint-small) {
+    min-width: 50%;
+    max-width: 24rem; //512px @16
+  }
+}
+
+.m-nav-link-span {
+  min-width: $spacing-bigger;
+}
+
