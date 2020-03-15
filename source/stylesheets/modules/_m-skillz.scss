@@ -1,0 +1,27 @@
+.m-skills {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  @media (min-width: $breakpoint-small) {
+    flex-direction: row;
+  }
+}
+
+.m-skills-title {
+  @media (min-width: $breakpoint-small) {
+    max-width: 12rem;
+  }
+}
+
+.m-skills-item-group {
+  @media (min-width: $breakpoint-small) {
+    max-width: 60%;
+  }
+}
+
+.m-skills-list-item {
+  display: flex;
+  align-items: center;
+}
+
+

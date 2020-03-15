@@ -1,0 +1,22 @@
+.m-work-item {
+  background-color: $b-lt-purple;
+  width: 60vw;
+  margin-left: 2rem;
+}
+
+.m-work-item-faux-before {
+  background-color: $b-pr-red;
+  @extend .u-border-solid;
+  transform: skew(-60deg);
+  transform-origin: right bottom;
+  width: calc(60vw * 1);
+  height: 2rem;
+  top: -6rem;
+  margin-left: 2rem;
+  left: -4px;
+  z-index: -1;
+  content: "";
+  box-sizing: border-box;
+  border-image: initial;
+}
+

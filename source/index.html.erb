@@ -3,10 +3,21 @@ title: Kelly McCann
 ---
 
 <%= partial "partials/nav" %>
-<%= partial "partials/welcome" %>
+
+<%#  apply core width and margins to content blocks - to remove, add the below individually to independent modules %>
+
+<div class="u-max-width-content-narrow u-margin-right-2-max-content u-margin-left-2-max-content">
 
 
+  <%= partial "partials/welcome" %>
+  <%= partial "partials/skillz" %>
+  <%= partial "partials/werk" %>
 
+
+</div>
+
+
+<%# example of how to sync data with partial %>
   <%# <%= partial("partials/hero", :locals => {
   :title => data.heroes.families.title,
   :body => data.heroes.families.body,
@@ -14,7 +25,7 @@ title: Kelly McCann
 
 
 <%= link_to(
-  "Link of something work looking at",
+  "Link to middleman templating lang",
   "https://middlemanapp.com/basics/templating_language/",
   target: "_blank"
 ) %>

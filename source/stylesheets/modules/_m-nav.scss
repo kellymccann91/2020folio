@@ -1,5 +1,12 @@
 .m-nav {
+  display: none;
   height: $spacing-big;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 3rem);
+  @media ($breakpoint-small) {
+    dispaly: block;
+  }
 }
 
 .m-nav-links-container {
@@ -10,7 +17,9 @@
 
 .m-nav-link {
   max-height: 100%;
-  padding: $spacing-hairline;
+  @media (min-width: $breakpoint-small) {
+    padding: $spacing-hairline;
+  }
 }
 
 .m-nav-items {
