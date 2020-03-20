@@ -29,7 +29,3 @@
 .u-background-color-black {
     background-color: $n-black;
 }
-
-.u-background-color-white-pass-through {
-    background-color: transparentize($color: #fff, $amount: .35);
-}

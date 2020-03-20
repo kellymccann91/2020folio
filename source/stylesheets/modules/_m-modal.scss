@@ -1,9 +1,6 @@
 .m-modal {
-  background-color: transparent !important;
-  border-style: dashed;
   box-shadow: none;
   height: calc(100vh - 3rem);
-  overflow: visible;
   position: absolute;
   top: 0;
   width: calc(100vw - 3rem);
@@ -14,6 +11,13 @@
   }
 }
 
+.m-modal-box-drop {
+  @extend .m-modal;
+  background-color: $n-off-white;
+  overflow: visible;
+  transform: translate(4px, -4px);
+}
+
 .m-modal__content {
   left: 0px;
 }
@@ -21,6 +25,8 @@
 // utility classes not working properly with aria-modal (max class names = 1)
 .m-modal__close-button {
   @extend .u-box-drop-square-purple-drop;
+  @extend .u-button-box-drop;
+  @extend .u-button;
   height: $spacing-medium;
   margin: $spacing-shorter;
   position: absolute;

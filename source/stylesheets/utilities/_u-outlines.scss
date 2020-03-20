@@ -8,6 +8,11 @@
   border-bottom: 1px solid $n-black;
 }
 
+.u-border-dashed-bold {
+  border: 2px solid $n-black;
+  border-style: dashed;
+} 
+
 .u-border-dashed {
   border: 1px solid $n-black;
   border-style: dashed;

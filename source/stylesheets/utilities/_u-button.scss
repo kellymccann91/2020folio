@@ -1,0 +1,13 @@
+.u-button {
+  :focus {
+    @extend .u-border-dashed-bold; 
+    outline: none;
+  }
+}
+
+.u-button-box-drop {
+  *,
+  ::after {
+    pointer-events: none;
+  }
+}

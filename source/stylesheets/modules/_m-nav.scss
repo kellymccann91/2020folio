@@ -38,10 +38,8 @@
 }
 
 .m-nav-mobile-button {
-  @extend .m-modal__close-button;
-  background-color: white;
   height: $spacing-medium;
-  // $spacing-shorter plus border margin (4px)
+  // $spacing-shorter plus border margin (4px) to hide while in line w/ modals
   margin: calc(1.5rem + 4px);
   position: fixed;
   right: 0;
