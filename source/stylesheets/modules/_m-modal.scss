@@ -1,0 +1,55 @@
+.m-modal {
+  background-color: transparent !important;
+  border-style: dashed;
+  box-shadow: none;
+  height: calc(100vh - 3rem);
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  width: calc(100vw - 3rem);
+  z-index: 100;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// utility classes not working properly with modal
+.m-modal__close-button {
+  background-color: white;
+  height: $spacing-medium;
+  margin: $spacing-shorter;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $spacing-medium;
+
+  // u-box-drop-square props
+  @extend .u-border-dashed;
+  padding: $spacing-tiny $spacing-shorter $spacing-shorter $spacing-tiny;
+  transform: translate(4px, -4px);
+  z-index: 10;
+
+  ::after {
+    @extend .u-border-solid;
+    background-color: $n-white;
+    border-image: initial;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.m-modal-close:before {
+  border: none;
+  height: 3.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $spacing-medium;
+}

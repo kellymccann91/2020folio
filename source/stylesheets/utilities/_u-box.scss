@@ -1,0 +1,131 @@
+// structure: put all content inside a div with class ".u-box" and all u-box styles (eg. u-box--red u-box--shallow)
+// add <div class="u-box-top"></div> first inside ".u-box"
+// add <div class="u-box-main"></div> next
+// add <div class="u-box-right"></div> inside ".u-box-main"
+
+.u-box-main {
+  @extend .u-border-solid;
+}
+
+.u-box-top {
+  @extend .u-border-solid;
+  transform: skew(-65deg);
+  transform-origin: right bottom;
+}
+
+.u-box-right {
+  @extend .u-border-solid;
+  transform: skewY(-25deg);
+  transform-origin: left top;
+  margin-top: -1px;
+  position: absolute;
+}
+
+.u-box {
+  &--medium {
+    .u-box-main {
+      @media(min-width: $breakpoint-small) {
+        height: 25rem;
+        width: 30rem;
+      }
+    }
+    .u-box-top {
+      @media(min-width: $breakpoint-small) {
+        width: 30rem;
+      }
+    }
+    .u-box-right {
+    @media(min-width: $breakpoint-small) {
+        height: 25rem;
+        margin-left: calc(30rem - 1px);
+      }
+    }
+  }
+
+  &--large {
+    .u-box-main {
+      @media(min-width: $breakpoint-small) {
+        height: 30rem;
+        width: 35rem;
+      }
+    }
+    .u-box-top {
+      @media(min-width: $breakpoint-small) {
+        width: 35rem;
+      }
+    }
+    .u-box-right {
+    @media(min-width: $breakpoint-small) {
+        height: 30rem;
+        margin-left: calc(35rem - 1px);
+      }
+    }
+  }
+
+  &--shallow {
+    .u-box-main {
+      @media (max-width: $breakpoint-small) {
+        height: calc(72rem - .8 * 100vw);
+        width: 80vw;
+      }
+    }
+    .u-box-top {
+      @media (max-width: $breakpoint-small) {
+        width: 80vw;
+      }
+      height: .5rem;
+    }
+    .u-box-right {
+      @media (max-width: $breakpoint-small) {
+        height: calc(72rem - .8 * 100vw);
+        margin-left: calc(80vw - 1px);
+      }
+      width: 1.2rem;
+    }
+    .u-box-centered {
+      @media (max-width: $breakpoint-small) {
+        padding-right: $spacing-shorter;
+      }
+    }
+  }
+
+  &--deep {
+    .u-box-main {
+      @media (max-width: $breakpoint-small) {
+        height: calc(70rem - .7 * 100vw);
+        width: 70vw;
+      }
+    }
+    .u-box-top {
+      @media (max-width: $breakpoint-small) {
+        width: 70vw;
+      }
+      height: 1.5rem;
+    }
+    .u-box-right {
+      @media (max-width: $breakpoint-small) {
+        height: calc(70rem - .7 * 100vw);
+        margin-left: calc(70vw - 1px);
+      }
+      width: 3.2rem;
+    }
+    .u-box-centered {
+      @media (max-width: $breakpoint-small) {
+        padding-right: $spacing-shortest;
+      }
+    }
+  }
+
+  &--red {
+    .u-box-top,
+    .u-box-right {
+      background-color: $b-lt-red;
+    }
+  }
+  &--purple {
+    .u-box-top,
+    .u-box-right {
+      background-color: $b-pr-purple;
+    }
+  }
+}

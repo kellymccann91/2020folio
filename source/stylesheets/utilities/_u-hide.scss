@@ -1,0 +1,35 @@
+.u-hide-visually {
+  visibility: hidden;
+}
+
+.u-hide-visually-mb {
+  @media screen and (max-width: $breakpoint-small) {
+    visibility: hidden;
+  }
+}
+
+.u-hide-visually-dt {
+  @media screen and (min-width: $breakpoint-small) {
+    visibility: hidden;
+  }
+}
+
+.u-hide-visually {
+  visibility: hidden;
+}
+
+.u-display-none {
+  display: none;
+}
+
+.u-display-none-mb {
+  @media screen and (max-width: $breakpoint-small) {
+    display: none;
+  }
+}
+
+.u-display-none-dt {
+  @media screen and (min-width: $breakpoint-small) {
+    display: none;
+  }
+}

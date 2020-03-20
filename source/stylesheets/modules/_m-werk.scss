@@ -1,22 +1,112 @@
-.m-work-item {
-  background-color: $b-lt-purple;
-  width: 60vw;
-  margin-left: 2rem;
+.m-work-title {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $breakpoint-small) {
+    flex-direction: row;
+  }
+}
+.m-work-title-header {
+  @media (min-width: $breakpoint-small) {
+    max-width: 12rem;
+  }
 }
 
-.m-work-item-faux-before {
-  background-color: $b-pr-red;
-  @extend .u-border-solid;
-  transform: skew(-60deg);
-  transform-origin: right bottom;
-  width: calc(60vw * 1);
-  height: 2rem;
-  top: -6rem;
-  margin-left: 2rem;
-  left: -4px;
-  z-index: -1;
-  content: "";
-  box-sizing: border-box;
-  border-image: initial;
+.m-work-title-blurb {
+  align-self: flex-end;
+  
+  @media (min-width: $breakpoint-small) {
+    max-width: 60%;
+  }
+}
+
+.m-work-items-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.m-work-items {
+  margin-top: $spacing-shorter;
+  width: fit-content;
+
+  @media (max-width: $breakpoint-small - 1) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.m-work-item {
+  max-width: fit-content; //prevents background from overflowing box
+}
+
+.m-work-item-second {
+  @media (max-width: $breakpoint-small - 1) {
+    align-self: flex-end;
+  }
+  @media (min-width: $breakpoint-small) {
+    margin-left: 17rem;
+    margin-top: -5rem;
+    position: relative;
+  }
+  @media (min-width: $breakpoint-large) {
+    margin-left: 33rem;
+    margin-top: -17rem;
+  }
+}
+
+.m-work-item-img {
+  margin: 0 auto;
+  width: 25vh;
+
+  @media (min-width: $breakpoint-small) {
+    width: 40%;
+  }
+}
+
+.m-work-item-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m-work-grid {
+  display: grid;
+  grid-gap: $spacing-shorter;
+  grid-template-rows: 3.5rem auto 1fr auto;
+  grid-template-columns: 40% 60%;
+}
+.m-work-item-img {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+
+  @media (min-width: $breakpoint-small) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 100%;
+  }
+}
+.m-work-item-context-title {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+
+  @media (min-width: $breakpoint-small) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+.m-work-item-context-blurb {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+  @media (min-width: $breakpoint-small) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.m-work-item-skills {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  @media (min-width: $breakpoint-small) {
+    grid-row: 3 / 4;
+  }
 }
 

@@ -1,11 +1,12 @@
 .m-nav {
   display: none;
   height: $spacing-big;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: calc(100% - 3rem);
-  @media ($breakpoint-small) {
-    dispaly: block;
+  z-index: 4000;
+  @media (min-width: $breakpoint-small) {
+    display: block;
   }
 }
 

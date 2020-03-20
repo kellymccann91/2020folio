@@ -27,7 +27,7 @@
   font-size: $font-size-grampa-shark;
 }
 
-@media screen and (max-width: $breakpoint-large) {
+@media screen and (max-width: $breakpoint-small) {
   .u-font-size-1-mb {
     font-size: $font-size-baby-shark;
   }
@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $breakpoint-small) {
   .u-font-size-1-dt {
     font-size: $font-size-baby-shark;
   }

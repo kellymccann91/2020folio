@@ -13,6 +13,26 @@
   border-style: dashed;
 }
 
+.u-border-dashed-right {
+  border-right: 1px solid $n-black;
+  border-right-style: dashed;
+}
+
+.u-border-dashed-left {
+  border-left: 1px solid $n-black;
+  border-left-style: dashed;
+}
+
+.u-border-dashed-top {
+  border-top: 1px solid $n-black;
+  border-top-style: dashed;
+}
+
+.u-border-dashed-bottom {
+  border-bottom: 1px solid $n-black;
+  border-bottom-style: dashed;
+}
+
 // Box Shadows
 
 .u-box-shadow-vertical {
@@ -28,17 +48,17 @@
   z-index: 10;
 
   ::after {
-  background-color: $n-white;
   @extend .u-border-solid;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -4px;
-  left: -4px;
-  z-index: -1;
-  content: "";
-  box-sizing: border-box;
+  background-color: $n-white;
   border-image: initial;
+  box-sizing: border-box;
+  content: "";
+  height: 100%;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 100%;
+  z-index: -1;
   }
 }
 

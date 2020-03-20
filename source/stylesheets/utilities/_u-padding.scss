@@ -158,7 +158,7 @@
   padding-left: $spacing-biggest;
 }
 
-@media screen and (max-width: $breakpoint-large) {
+@media screen and (max-width: $breakpoint-small) {
   .u-padding-0-mb {
     padding: 0;
   }
@@ -482,7 +482,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $breakpoint-small) {
   .u-padding-0-dt {
     padding: 0;
   }

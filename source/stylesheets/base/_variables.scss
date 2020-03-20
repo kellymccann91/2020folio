@@ -22,7 +22,7 @@ $spacing-short: 2.5rem; // 40px @ 16
 $spacing-medium: 3.5rem; // 56px @ 16
 $spacing-big: 4rem; // 64px @ 16
 $spacing-bigger: 5rem; // 80px @ 16
-$spacing-biggest: 8rem; // 128px @ 16
+$spacing-biggest: 6.5rem; // 104px @ 16
 
 // Spacing by percentage
 $spacing-per-shortest: 10%; 
@@ -47,13 +47,13 @@ $font-size-gramma-shark: 6rem; //96px @ 16
 $font-size-grampa-shark: 8rem; //128px @ 16
 
 // Line height
-$tightest-line-height: 1;
-$tighter-line-height: 1.1;
-$tight-line-height: 1.2;
-$slight-line-height: 1.3;
-$loose-line-height: 1.4;
-$looser-line-height: 1.5;
-$loosest-line-height: 1.6;
+$tightest-line-height: 1.2;
+$tighter-line-height: 1.3;
+$tight-line-height: 1.4;
+$slight-line-height: 1.6;
+$loose-line-height: 1.8;
+$looser-line-height: 2;
+$loosest-line-height: 2.2;
 $base-line-height: $looser-line-height;
 $heading-line-height: $slight-line-height;
 
