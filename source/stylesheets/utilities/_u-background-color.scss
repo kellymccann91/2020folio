@@ -1,57 +1,21 @@
-.u-background-color-lt-rose {
-    background-color: $b-lt-rose;
-}
-
-.u-background-color-pr-rose {
-    background-color: $b-pr-rose;
+.u-background-color-lt-tan {
+    background-color: $b-lt-tan;
 }
 
 .u-background-color-lt-green {
     background-color: $b-lt-green;
 }
 
-.u-background-color-pr-green {
-    background-color: $b-pr-green;
-}
-
-.u-background-color-dk-green {
-    background-color: $b-dk-green;
-}
-
-.u-background-color-lt-blue {
-    background-color: $b-lt-blue;
-}
-
 .u-background-color-pr-blue {
     background-color: $b-pr-blue;
-}
-
-.u-background-color-dk-blue {
-    background-color: $b-dk-blue;
 }
 
 .u-background-color-lt-red {
     background-color: $b-lt-red;
 }
 
-.u-background-color-pr-red {
-    background-color: $b-pr-red;
-}
-
-.u-background-color-dk-red {
-    background-color: $b-dk-red;
-}
-
-.u-background-color-lt-purple {
-    background-color: $b-lt-purple;
-}
-
 .u-background-color-pr-purple {
     background-color: $b-pr-purple;
-}
-
-.u-background-color-dk-purple {
-    background-color: $b-dk-purple;
 }
 
 .u-background-color-white {
@@ -68,36 +32,4 @@
 
 .u-background-color-white-pass-through {
     background-color: transparentize($color: #fff, $amount: .35);
-}
-
-.u-background-gradient-green-vr {
-    background: $green-vertical-right;
-}
-
-.u-background-gradient-purple-vr {
-    background: $purple-vertical-right;
-}
-
-.u-background-gradient-blue-vr {
-    background: $blue-vertical-right;
-}
-
-.u-background-gradient-rose-vr {
-    background: $rose-vertical-right;
-}
-
-.u-background-gradient-green-vl {
-    background: $green-vertical-left;
-}
-
-.u-background-gradient-purple-vl {
-    background: $purple-vertical-left;
-}
-
-.u-background-gradient-blue-vl {
-    background: $blue-vertical-left;
-}
-
-.u-background-gradient-rose-vl {
-    background: $rose-vertical-left;
 }

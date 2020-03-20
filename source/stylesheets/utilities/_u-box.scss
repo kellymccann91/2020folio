@@ -1,7 +1,8 @@
 // structure: put all content inside a div with class ".u-box" and all u-box styles (eg. u-box--red u-box--shallow)
 // add <div class="u-box-top"></div> first inside ".u-box"
 // add <div class="u-box-main"></div> next
-// add <div class="u-box-right"></div> inside ".u-box-main"
+// add <div class="u-box-right"></div> first inside ".u-box-main"
+// add all content below .u-box-right inside .u-box-main
 
 .u-box-main {
   @extend .u-border-solid;

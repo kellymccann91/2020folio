@@ -38,12 +38,13 @@
 }
 
 .m-nav-mobile-button {
+  @extend .m-modal__close-button;
   background-color: white;
-  bottom: 0;
   height: $spacing-medium;
   // $spacing-shorter plus border margin (4px)
   margin: calc(1.5rem + 4px);
   position: fixed;
   right: 0;
+  top: calc(100vh - 7rem);
   width: $spacing-medium;
 }

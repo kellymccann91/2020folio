@@ -61,46 +61,27 @@ $heading-line-height: $slight-line-height;
 $letter-spacing-slight: 0.05em;
 
 // Colors
-$b-lt-rose: #ffecf2;
-$b-pr-rose: #DA99AD;
-$b-dk-rose: #6D2F3D;
-$b-lt-green: #eefffb;
-$b-pr-green: #3cc39f;
-$b-pr-green: #59FFA0;
-$b-dk-green: #3e4c3d;
-$b-lt-blue: #e5eeee;
-$b-pr-blue: #8BB1C4;
-$b-dk-blue: #668591;
+// proposed:
+$b-pr-blue: #007EA7;
 $b-lt-red: #F96557;
-$b-pr-red: #B23F32;
-$b-dk-red: #44120E;
-$b-lt-purple: #f2ecff;
 $b-pr-purple: #B4ADEA;
-$b-dk-purple: #4A4276;
-$n-white: #fff;
+$b-lt-green: #B8E2C8;
+// maybe
+$b-lt-tan: #F7C59F;
+// end maybe
+
 $n-off-white: #F9FCFC;
+$n-white: #fff;
 $n-black: #021F25;
-$n-white-translucent: transparentize($n-white, 0.35);
-
-
-// Gradients
-$green-vertical-right: linear-gradient(186deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-green 100%);
-$green-vertical-left: linear-gradient(174deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-green 100%);
-$purple-vertical-right: linear-gradient(186deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-purple 100%);
-$purple-vertical-left: linear-gradient(174deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-purple 100%);
-$rose-vertical-right: linear-gradient(186deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-rose 100%);
-$rose-vertical-left: linear-gradient(174deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-rose 100%);
-$blue-vertical-right: linear-gradient(186deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-blue 100%);
-$blue-vertical-left: linear-gradient(174deg,$n-off-white 0%, rgba(249,252,252,1) 30%, $b-lt-blue 100%);
-
+// end proposed colors
 
 // Font Colors
 $base-font-color: $n-black;
-$heading-font-color: $b-dk-green;
-$action-color: $b-dk-purple;
+$heading-font-color: $n-black;
+$action-color: $b-pr-blue;
 
 // Border
-$base-border-color: $b-lt-blue;
+$base-border-color: $n-black;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
