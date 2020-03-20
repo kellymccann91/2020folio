@@ -1,5 +1,4 @@
 .m-nav {
-  display: none;
   height: $spacing-big;
   position: fixed;
   top: 0;
@@ -38,3 +37,13 @@
   min-width: $spacing-bigger;
 }
 
+.m-nav-mobile-button {
+  background-color: white;
+  bottom: 0;
+  height: $spacing-medium;
+  // $spacing-shorter plus border margin (4px)
+  margin: calc(1.5rem + 4px);
+  position: fixed;
+  right: 0;
+  width: $spacing-medium;
+}

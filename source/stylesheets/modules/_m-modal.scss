@@ -14,8 +14,12 @@
   }
 }
 
+.m-modal__content {
+  left: 0px;
+}
+
 // utility classes not working properly with modal
-.m-modal__close-button {
+.m-modal__button {
   background-color: white;
   height: $spacing-medium;
   margin: $spacing-shorter;
@@ -43,13 +47,4 @@
     width: 100%;
     z-index: -1;
   }
-}
-
-.m-modal-close:before {
-  border: none;
-  height: 3.5rem;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: $spacing-medium;
 }
