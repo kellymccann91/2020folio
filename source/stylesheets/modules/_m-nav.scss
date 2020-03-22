@@ -40,9 +40,9 @@
 .m-nav-mobile-button {
   height: $spacing-medium;
   // $spacing-shorter plus border margin (4px) to hide while in line w/ modals
-  margin: calc(1.5rem + 4px);
+  margin: calc(2.5rem + 4px);
   position: fixed;
   right: 0;
-  top: calc(100vh - 7rem);
+  top: calc(100vh - 8.5rem);
   width: $spacing-medium;
 }
