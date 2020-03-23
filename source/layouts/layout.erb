@@ -9,9 +9,14 @@
     <title><%= current_page.data.title || "Middleman" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   </head>
   <body>
     <%= yield %>
   </body>
   <%= javascript_include_tag "aria.modal.min" %>
 </html>
+

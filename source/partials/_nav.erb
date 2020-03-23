@@ -26,20 +26,17 @@
 
 </nav>
 
-<!-- <div class="[ u-box u-box--purple u-box--medium u-box--shallow ]">
-  <div class="u-box-top"></div>
-  <div class="u-box-main">
-    <div class="u-box-right"></div>
-    <button class="m-modal__open-button m-nav-mobile-button [ u-hide-visually-dt ]" type="button"
-      data-modal-open="primary-nav"><img class='m-modal-close-icon' src='../images/emojis/popping-cork.png'><span
-        class='u-hide-visually'>Navigation</span></button>
-  </div>
-
-</div> -->
-
-<button class="m-nav-mobile-button [ u-button u-button-box-drop u-box-drop-square-purple-drop u-display-none-dt ]"
+<button class="m-nav-mobile-button [ u-button u-button-box-drop u-box-drop-square-blue-drop u-display-none-dt ]"
   type="button" data-modal-open="primary-nav">
   <span></span>
   <img class='m-modal-close-icon' src='../images/emojis/popping-cork.png'>
   <span class='u-hide-visually'>Navigation</span>
 </button>
+
+<%= partial "partials/mobile-nav" %>
+
+<script>
+  $(".m-mobile-nav-link").click(function () {
+    $("#primary-nav").prop('hidden', true);
+  })
+</script>

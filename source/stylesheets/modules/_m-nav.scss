@@ -17,6 +17,7 @@
 
 .m-nav-link {
   max-height: 100%;
+  text-decoration: none;
   @media (min-width: $breakpoint-small) {
     padding: $spacing-hairline;
   }

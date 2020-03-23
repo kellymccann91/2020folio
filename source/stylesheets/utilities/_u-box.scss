@@ -6,6 +6,7 @@
 
 .u-box-main {
   @extend .u-border-solid;
+  position: relative;
 }
 
 .u-box-top {
@@ -16,9 +17,9 @@
 
 .u-box-right {
   @extend .u-border-solid;
+  top: 0;
   transform: skewY(-25deg);
   transform-origin: left top;
-  margin-top: -1px;
   position: absolute;
 }
 
@@ -79,11 +80,13 @@
     .u-box-right {
       @media (max-width: $breakpoint-small) {
         height: calc(72rem - .8 * 100vw);
-        margin-left: calc(80vw - 1px);
       }
+      right: -1.2rem;
       width: 1.2rem;
     }
     .u-box-centered {
+      margin: auto;
+
       @media (max-width: $breakpoint-small) {
         padding-right: $spacing-shorter;
       }
@@ -106,11 +109,13 @@
     .u-box-right {
       @media (max-width: $breakpoint-small) {
         height: calc(70rem - .7 * 100vw);
-        margin-left: calc(70vw - 1px);
       }
+      right: -3.2rem;
       width: 3.2rem;
     }
     .u-box-centered {
+      margin: auto;
+
       @media (max-width: $breakpoint-small) {
         padding-right: $spacing-shortest;
       }
@@ -123,10 +128,37 @@
       background-color: $b-lt-red;
     }
   }
+  &--blue {
+    .u-box-top,
+    .u-box-right {
+      background-color: $b-pr-blue;
+    }
+  }
+  &--green {
+    .u-box-top,
+    .u-box-right {
+      background-color: $b-lt-green;
+    }
+  }
+  &--tan {
+    .u-box-top,
+    .u-box-right {
+      background-color: $b-lt-tan;
+    }
+  }
   &--purple {
     .u-box-top,
     .u-box-right {
       background-color: $b-pr-purple;
+    }
+  }
+
+  &:hover {
+    .u-box-top,
+    .u-box-right {
+      background-color: transparent;
+      background-image: url("../../images/background/stripes.svg");
+      background-size: cover;     
     }
   }
 }

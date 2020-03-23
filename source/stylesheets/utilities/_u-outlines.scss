@@ -87,6 +87,20 @@
   background-color: $b-pr-purple;
 }
 
+.u-box-drop-square-blue {
+  @extend .u-box-drop-square;
+  
+  ::after {
+    background-color: $b-pr-blue;
+  }
+}
+
+.u-box-drop-square-blue-drop {
+  @extend .u-box-drop-square;
+  background-color: $b-pr-blue;
+}
+
+
 .u-box-drop-square-lt-green {
   @extend .u-box-drop-square;
   
