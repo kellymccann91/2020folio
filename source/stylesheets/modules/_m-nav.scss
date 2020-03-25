@@ -12,6 +12,7 @@
 .m-nav-links-container {
   display: flex;
   justify-content: space-between;
+  max-height: 100%;
   width: 100%;
 }
 
@@ -20,6 +21,9 @@
   text-decoration: none;
   @media (min-width: $breakpoint-small) {
     padding: $spacing-hairline;
+  }
+  img {
+    max-height: 100%;
   }
 }
 
@@ -39,11 +43,12 @@
 }
 
 .m-nav-mobile-button {
-  height: $spacing-medium;
+  height: $spacing-big;
   // $spacing-shorter plus border margin (4px) to hide while in line w/ modals
   margin: calc(2.5rem + 4px);
+  padding: $spacing-hairline $spacing-shortest $spacing-shortest $spacing-hairline;
   position: fixed;
   right: 0;
-  top: calc(100vh - 9.5rem);
-  width: $spacing-medium;
+  top: calc(100vh - 10rem);
+  width: $spacing-big;
 }

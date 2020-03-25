@@ -55,7 +55,7 @@
 
 .u-box-drop-square {
   @extend .u-border-dashed;
-  padding: $spacing-tiny $spacing-shorter $spacing-shorter $spacing-tiny;
+  padding: 0 $spacing-tiny $spacing-tiny 0;
   transform: translate(4px, -4px);
   z-index: 10;
 

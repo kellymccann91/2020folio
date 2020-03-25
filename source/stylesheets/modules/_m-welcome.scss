@@ -9,11 +9,11 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 27rem;
+  max-width: 28rem;
   width: calc(100vw - 3rem - 4px);
 
   @media (min-width: $breakpoint-small) {
-    width: 23rem;
+    width: 28rem;
   }
 }
 
@@ -24,7 +24,7 @@
 
 .m-welcome-title-text {
   @media (min-width: $breakpoint-small) {
-    width: 16rem;
+    width: 21rem;
   }
 }
 

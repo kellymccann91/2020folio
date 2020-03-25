@@ -1,0 +1,52 @@
+.m-case-study-content {
+  background-color: $n-off-white;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100% - 9.5rem);
+  overflow-y: scroll;
+}
+
+.m-case-study-link-out {
+  font-size: $font-size-child-shark;
+  margin: $spacing-shortest 0 $spacing-short;
+}
+
+.m-case-study-overview__tertiary-title {
+  border-bottom: 3px dashed $b-pr-purple;
+  font-size: $font-size-child-shark;
+  margin: $spacing-shorter 0 $spacing-shortest;
+  width: max-content;
+}
+
+.m-case-study-overview__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $spacing-shortest 0 $spacing-shorter 0;
+
+
+  li {
+    list-style: circle;
+    margin: 0 $spacing-shorter;
+    padding-left: $spacing-shortest;
+  }
+}
+
+.m-case-study-section-title {
+  border-bottom: 3px solid $b-lt-red;
+  font-size: $font-size-momma-shark;
+  margin: $spacing-short 0 $spacing-shortest;
+  width: max-content;
+}
+
+.m-case-study-sub-section {
+  margin-left: $spacing-short;
+}
+
+.m-case-study-sub-section-title {
+  font-size: $font-size-teenage-shark;
+  margin: $spacing-short 0 $spacing-shortest;
+}
+
+.m-case-study-section-blurb {
+  margin: $spacing-shorter 0 0; 
+}

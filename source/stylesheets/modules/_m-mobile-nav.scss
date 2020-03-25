@@ -19,6 +19,16 @@
   margin: auto $spacing-shortest;
 }
 
-.m-mobile-nav__list li {
+.m-mobile-nav__list li:not(:first-of-type) {
   height: $spacing-big;
+}
+.m-mobile-nav__list li:first-of-type {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.m-mobile-nav-logo {
+  height: $spacing-biggest;
+  width: auto;
 }

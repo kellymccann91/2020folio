@@ -1,13 +1,23 @@
 .m-modal {
-  box-shadow: none;
+  box-shadow: 0 0 1800px 400px rgba( $n-off-white, 0.4);
   height: calc(100vh - 3rem);
+  max-width: $content-max-width;
   position: fixed;
   top: 0;
   width: calc(100vw - 3rem);
-  z-index: 100;
+  z-index: 10000;
+
+  @media screen and (min-width: $breakpoint-small) {
+    height: calc(100vh - 8rem);
+    margin: 4rem auto;
+    width: calc(100vw - 7rem);
+  }
 
   &:focus {
     outline: none;
+  }
+  &:not([hidden]) {
+    overflow-y: visible;
   }
 }
 
@@ -27,12 +37,15 @@
   @extend .u-box-drop-square-blue-drop;
   @extend .u-button-box-drop;
   @extend .u-button;
-  height: $spacing-medium;
+  height: $spacing-big;
   margin: $spacing-shorter;
   position: absolute;
   right: 0;
   bottom: 0;
-  width: $spacing-medium;
   width: calc(100% - 2rem);
+
+  @media screen and (min-width: $breakpoint-small) {
+    max-width: 18rem;
+  }
 }
 

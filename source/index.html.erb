@@ -4,8 +4,6 @@ title: Kelly McCann
 
 <%= partial "partials/nav" %>
 
-<%= partial "partials/mobile-nav" %>
-
 <%#  apply core width and margins to content blocks - to remove, add the below individually to independent modules %>
 
 <div class="[ u-max-width-content-narrow u-margin-right-2-max-content u-margin-left-2-max-content ]">
@@ -14,19 +12,23 @@ title: Kelly McCann
 
 <%= partial "partials/industries" %>
 
-<div id="about" class="[ u-background-color-white u-border-dashed-top u-border-dashed-bottom ]">
-  <div class="[ u-max-width-content-narrow u-padding-top-7åå u-margin-right-2-max-content u-margin-left-2-max-content ]">
+<div id="about" class="[ u-background-color-white u-border-dashed-bottom ]">
+  <div class="[ u-max-width-content-narrow u-padding-top-6 u-margin-right-2-max-content u-margin-left-2-max-content ]">
     <%= partial "partials/skillz" %>
   </div>
 </div>
 
-<div id="work" class="[ u-max-width-content-narrow u-margin-right-2-max-content u-margin-left-2-max-content u-padding-top-6 u-padding-bottom-4 ] ">
+<!-- <div class="[ u-background-shapes ]"> -->
+<div id="work"
+  class="[ u-max-width-content-narrow u-margin-right-2-max-content u-margin-left-2-max-content u-padding-top-6 u-padding-bottom-4 ] ">
   <%= partial "partials/werk" %>
 </div>
+<!-- </div> -->
 
 
 <div id="contact" class="[ u-background-color-lt-green u-border-dashed-top ]">
-  <div class="[ u-max-width-content-narrow u-padding-top-6 u-padding-bottom-4 u-margin-right-2-max-content u-margin-left-2-max-content ]">
+  <div
+    class="[ u-max-width-content-narrow u-padding-top-6 u-padding-bottom-4 u-margin-right-2-max-content u-margin-left-2-max-content ]">
     <%= partial "partials/contact" %>
   </div>
 </div>
@@ -40,7 +42,7 @@ title: Kelly McCann
 
 
 <%# example of how to sync data with partial %>
-  <%# <%= partial("partials/hero", :locals => {
+<%# <%= partial("partials/hero", :locals => {
   :title => data.heroes.families.title,
   :body => data.heroes.families.body,
   :image => data.heroes.families.image }) %>
