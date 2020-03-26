@@ -29,6 +29,13 @@
     margin: 0 $spacing-shorter;
     padding-left: $spacing-shortest;
   }
+
+  &.m-case-study-verview__shape-list li {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    margin-top: $spacing-shortest;
+  }
 }
 
 .m-case-study-section-title {

@@ -9,13 +9,13 @@
 
 .m-skills-title {
   @media (min-width: $breakpoint-small) {
-    width: 20rem;
+    width: 16rem;
   }
 }
 
 .m-skills-item-group {
   @media (min-width: $breakpoint-small) {
-    width: calc(100vw - 20rem)
+    width: calc(100vw - 16rem)
   }
 }
 

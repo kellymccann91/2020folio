@@ -1,7 +1,7 @@
 .u-button {
-  :focus {
-    @extend .u-border-dashed-bold; 
-    outline: none;
+  &:hover {
+    background-color: transparent;
+    background-image: url(../../images/background/stripes.svg);
   }
 }
 

@@ -1,7 +1,45 @@
+@keyframes textscroll1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes textscroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.m-industries {
+  height: 6.25rem;
+}
+
+.m-industries-list-container {
+  height: 4.5rem;
+}
 
 .m-industries-list {
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: linear;
   display: flex;
   height: 4.5rem;
   overflow: hidden;
+  width: max-content;
 }
 
+.m-industries-list-1 {
+  animation-name: textscroll1;
+}
+
+.m-industries-list-2 {
+  animation-name: textscroll2;
+  position: relative;
+  top: -4.5rem;
+}

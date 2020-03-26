@@ -1,0 +1,30 @@
+.m-ethos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-small) {
+    flex-direction: row;
+  }
+}
+
+.m-ethos-block {
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-small) {
+    width: 50%;
+  }
+}
+
+.m-ethos-block-content {
+  max-width: $max-width-small;
+  @media screen and (min-width: $breakpoint-large) {
+    max-width: $max-width-medium / 2;
+    &.m-ethos-block-content-1 {
+      margin-left: auto;
+    }
+    &.m-ethos-block-content-2 {
+      margin-right: auto;
+    }
+  }
+}

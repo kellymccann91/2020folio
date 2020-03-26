@@ -56,3 +56,10 @@
   height: $spacing-bigger;
   width: auto;
 } 
+
+.u-image-svg-clickable {
+  fill: $b-pr-blue;
+  :hover * {
+    fill: $b-dk-purple;
+  }
+}

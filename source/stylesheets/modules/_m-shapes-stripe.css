@@ -1,6 +1,5 @@
 .m-shapes-stripe {
-  height: auto;
-  min-width: 96rem;
-  overflow: hidden;
-  width: 100%;
+  height: $spacing-bigger;
+  max-width: none;
+  overflow-x: hidden;
 }
