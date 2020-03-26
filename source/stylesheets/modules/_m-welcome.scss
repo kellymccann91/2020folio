@@ -5,15 +5,31 @@
   min-height: calc(100vh - 6rem - 2px);
 }
 
+.m-welcome-image {
+  position: absolute;
+  height: calc(100vh - 9rem);
+  top: -20vh;
+  transform: scale(2);
+  right: -35vh;
+
+  @media (min-width: $breakpoint-small) {
+    top: -20vh;
+    transform: scale(1);
+    right: -20vh;
+  }
+}
+
 .m-welcome-title {
   align-items: center;
   display: flex;
   justify-content: space-between;
   max-width: 28rem;
+  max-width: max-content;
   width: calc(100vw - 3rem - 4px);
 
   @media (min-width: $breakpoint-small) {
-    width: 28rem;
+    // width: 28rem;
+    width: max-content;
   }
 }
 
@@ -24,7 +40,8 @@
 
 .m-welcome-title-text {
   @media (min-width: $breakpoint-small) {
-    width: 21rem;
+    // width: 21rem;
+    width: max-content;
   }
 }
 
@@ -32,6 +49,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 10;
+}
+
+.m-welcome-header-line {
+  text-shadow: 0 0 32px #faf3f3;
 }
 
 .m-welcome-emoji-wave {

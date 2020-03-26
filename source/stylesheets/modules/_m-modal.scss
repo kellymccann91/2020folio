@@ -45,6 +45,7 @@
   width: calc(100% - 2rem);
 
   @media screen and (min-width: $breakpoint-small) {
+    margin: $spacing-shorter 3rem $spacing-shorter $spacing-shorter;
     max-width: 18rem;
   }
 }

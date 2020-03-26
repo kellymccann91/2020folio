@@ -1,44 +1,58 @@
 .u-image-icon-xsmall {
+  height: $spacing-short;
+  width: $spacing-short;
+}
+
+.u-image-icon-small {
   height: $spacing-medium;
   width: $spacing-medium;
 }
 
-.u-image-icon-small {
+.u-image-icon {
   height: $spacing-big;
   width: $spacing-big;
-}
+} 
 
-.u-image-icon {
+.u-image-icon-lg {
   height: $spacing-bigger;
   width: $spacing-bigger;
 } 
 
 .u-image-icon-xsmall-w {
   height: auto;
-  width: $spacing-medium;
+  width: $spacing-short;
 }
 
 .u-image-icon-small-w {
   height: auto;
-  width: $spacing-big;
+  width: $spacing-medium;
 }
 
 .u-image-icon-w {
+  height: auto;
+  width: $spacing-big;
+} 
+.u-image-icon-lg-w {
   height: auto;
   width: $spacing-bigger;
 } 
 
 .u-image-icon-xsmall-h {
-  height: $spacing-medium;
+  height: $spacing-short;
   width: auto;
 }
 
 .u-image-icon-small-h {
-  height: $spacing-big;
+  height: $spacing-medium;
   width: auto;
 }
 
 .u-image-icon-h {
+  height: $spacing-big;
+  width: auto;
+} 
+
+.u-image-icon-lg-h {
   height: $spacing-bigger;
   width: auto;
 } 

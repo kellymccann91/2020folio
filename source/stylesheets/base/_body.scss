@@ -1,5 +1,7 @@
 body {
     background-color: $n-off-white;
     font-family: $base-font-family;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 

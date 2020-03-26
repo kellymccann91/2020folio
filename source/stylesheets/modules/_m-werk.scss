@@ -7,7 +7,7 @@
 }
 .m-work-title-header {
   @media (min-width: $breakpoint-small) {
-    max-width: 12rem;
+    width: 20rem;
   }
 }
 
@@ -15,7 +15,7 @@
   align-self: flex-end;
   
   @media (min-width: $breakpoint-small) {
-    max-width: 60%;
+    width: calc(100vw - 20rem);
   }
 }
 
@@ -72,6 +72,15 @@
 .m-work-item-skills {
   display: flex;
   flex-wrap: wrap;
+}
+
+.m-work-item-skill {
+  align-items: center;
+  display: flex;
+
+  img {
+    margin-right: $spacing-shortest;
+  }
 }
 
 .m-work-grid {

@@ -9,14 +9,19 @@
 
 .m-skills-title {
   @media (min-width: $breakpoint-small) {
-    max-width: 12rem;
+    width: 20rem;
   }
 }
 
 .m-skills-item-group {
   @media (min-width: $breakpoint-small) {
-    max-width: 60%;
+    width: calc(100vw - 20rem)
   }
+}
+
+.m-skills-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .m-skills-list-item {
