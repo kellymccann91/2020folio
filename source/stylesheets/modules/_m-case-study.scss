@@ -57,3 +57,23 @@
 .m-case-study-section-blurb {
   margin: $spacing-shorter 0 0; 
 }
+
+.m-case-study-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m-case-study-img__collage {
+  @extend .m-case-study-img;
+  img {
+    max-width: 45%;
+  }
+}
+
+.m-case-study-img__center {
+  justify-content: center;
+}
+
+.m-case-study-img__tall {
+  max-height: 55vh;
+}

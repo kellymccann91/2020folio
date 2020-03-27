@@ -7,16 +7,9 @@
 
 .m-welcome-image {
   position: absolute;
-  height: calc(100vh - 9rem);
-  top: -20vh;
-  transform: scale(2);
-  right: -35vh;
-
-  @media (min-width: $breakpoint-small) {
-    top: -20vh;
-    transform: scale(1);
-    right: -20vh;
-  }
+  height: 100vh;
+  top: -9rem;
+  right: 0;
 }
 
 .m-welcome-title {
@@ -28,19 +21,12 @@
   width: calc(100vw - 3rem - 4px);
 
   @media (min-width: $breakpoint-small) {
-    // width: 28rem;
     width: max-content;
   }
 }
 
-.m-welcome-title-image {
-  position: absolute;
-  top: -$spacing-short;
-}
-
 .m-welcome-title-text {
   @media (min-width: $breakpoint-small) {
-    // width: 21rem;
     width: max-content;
   }
 }

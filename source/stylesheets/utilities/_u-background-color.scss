@@ -35,3 +35,14 @@
     background-size: 40%;
     background-position: center;
 }
+
+.u-background-hero {
+    background-image: url("../../images/shape-group/mobile-welcome.svg");
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: $breakpoint-small) {
+        background-image: url("../../images/shape-group/dt-welcome.svg"); 
+    }
+}
