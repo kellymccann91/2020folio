@@ -8,8 +8,8 @@
   z-index: 10000;
 
   @media screen and (min-width: $breakpoint-small) {
-    height: calc(100vh - 8rem);
-    margin: 4rem auto;
+    height: calc(100vh - 4rem);
+    margin: 2rem auto;
     width: calc(100vw - 7rem);
   }
 
