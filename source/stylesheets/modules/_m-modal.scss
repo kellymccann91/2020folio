@@ -38,7 +38,7 @@
   @extend .u-button-box-drop;
   @extend .u-button;
   height: $spacing-big;
-  margin: $spacing-shorter;
+  margin: 0 $spacing-shorter $spacing-shorter;
   position: absolute;
   right: 0;
   bottom: 0;

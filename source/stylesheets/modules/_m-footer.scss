@@ -1,4 +1,14 @@
 .m-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+
+  @media screen and (min-width: $breakpoint-small) {
+    justify-content: flex-end;
+  }
+}
+
+.m-footer-text {
+  @media screen and (max-width: $breakpoint-small) {
+    max-width: calc(100vw - 9.5rem);
+  }
 }
