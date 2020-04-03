@@ -35,8 +35,9 @@
 
 </nav>
 
-<button class="m-nav-mobile-button [ u-button u-button-box-drop u-box-drop-square-blue-drop u-display-none-dt ]"
-  type="button" data-modal-open="primary-nav">
+<button id="show-mobile-nav"
+  class="m-nav-mobile-button  [ u-button u-button-box-drop u-box-drop-square-blue-drop u-display-none-dt ]"
+  type="button" data-modal-open="mobile-nav">
   <span></span>
   <img class='m-modal-close-icon' src='../images/brand-core/hamburger.svg'>
   <span class='u-hide-visually'>Navigation</span>
@@ -45,7 +46,11 @@
 <%= partial "partials/mobile-nav" %>
 
 <script>
-  $(".m-mobile-nav-link").click(function () {
-    $("#primary-nav").prop('hidden', true);
+  // $(".m-mobile-nav-link").click(function () {
+  //   $("#mobile-nav").prop('hidden', true);
+  // })
+  $("#show-mobile-nav").click(function () {
+    $("#mobile-nav").removeAttr('hidden');
+    $("#mobile-nav").removeClass('u-display-none');
   })
 </script>
