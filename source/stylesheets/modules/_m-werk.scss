@@ -54,17 +54,10 @@
 }
 
 .m-work-item-third {
-  @media (max-width: $breakpoint-small - 1) {
-    // align-self: flex-start;
-  }
   @media (min-width: $breakpoint-small) {
-    margin-left: $spacing-medium;
+    margin-left: $spacing-biggest;
     margin-top: -$spacing-short;
     position: relative;
-  }
-  @media (min-width: $breakpoint-large) {
-    // margin-left: 33rem;
-    // margin-top: -17rem;
   }
 }
 

@@ -69,12 +69,12 @@
   &--shallow {
     .u-box-main {
       @media (max-width: $breakpoint-small) {
-        width: 80vw;
+        width: calc(82vw - 1.2rem);
       }
     }
     .u-box-top {
       @media (max-width: $breakpoint-small) {
-        width: 80vw;
+        width: calc(82vw - 1.2rem);
       }
       height: .5rem;
     }
@@ -96,12 +96,12 @@
   &--deep {
     .u-box-main {
       @media (max-width: $breakpoint-small) {
-        width: 70vw;
+        width: calc(82vw - 3.2rem);
       }
     }
     .u-box-top {
       @media (max-width: $breakpoint-small) {
-        width: 70vw;
+        width: calc(82vw - 3.2rem);
       }
       height: 1.5rem;
     }
