@@ -6,6 +6,7 @@
 
 .u-box-main {
   @extend .u-border-solid;
+  height: min-content;
   position: relative;
 }
 
@@ -17,6 +18,7 @@
 
 .u-box-right {
   @extend .u-border-solid;
+  height: 100%;
   top: 0;
   transform: skewY(-25deg);
   transform-origin: left top;
@@ -67,8 +69,6 @@
   &--shallow {
     .u-box-main {
       @media (max-width: $breakpoint-small) {
-        height: calc(66rem - 1.5 * 100vw);
-        min-height: 25rem;
         width: 80vw;
       }
     }
@@ -80,8 +80,6 @@
     }
     .u-box-right {
       @media (max-width: $breakpoint-small) {
-        height: calc(66rem - 1.5 * 100vw);
-        min-height: 25rem;
       }
       right: -1.2rem;
       width: 1.2rem;
@@ -98,8 +96,6 @@
   &--deep {
     .u-box-main {
       @media (max-width: $breakpoint-small) {
-        height: calc(66rem - 1.5 * 100vw);
-        min-height: 25rem;
         width: 70vw;
       }
     }
@@ -111,8 +107,6 @@
     }
     .u-box-right {
       @media (max-width: $breakpoint-small) {
-        height: calc(66rem - 1.5 * 100vw);
-        min-height: 25rem;
       }
       right: -3.2rem;
       width: 3.2rem;
