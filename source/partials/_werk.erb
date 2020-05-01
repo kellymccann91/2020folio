@@ -81,6 +81,26 @@
         <%= partial "partials/case-study-cb" %>
       </div>
       <!-- end third box -->
+      <!-- fourth box -->
+      <div class="m-work-item m-work-item-fourth [ u-box u-box--medium u-box--deep u-box--purple ]">
+        <div class="[ u-box-top ]"></div>
+        <button id="show-rld-mb-modal" type="button"
+          class="m-work-item-content [ u-box-main u-background-color-white ]">
+          <div class="[ u-box-right ]"></div>
+          <div class="m-work-grid [ u-padding-2 ]">
+            <div class="m-work-item-img-container [ u-box-centered ]">
+              <img class="m-work-item-img [ u-border-dashed ]" src="../images/case-studies/rld-mb/ecomm-redo.png">
+            </div>
+            <h3
+              class="m-work-item-context-title [ u-font-size-5-dt u-font-size-4-mb u-margin-right-2 u-text-align-left ]">
+              Richline Digital</h3>
+            <p class="m-work-item-context-blurb [ u-margin-right-2 u-text-align-left ]">User Experience Redesign of
+              eCommerce CMS</p>
+          </div>
+        </button>
+        <%= partial "partials/case-study-rld-mb" %>
+      </div>
+      <!-- end fourth box -->
     </div>
   </div>
 </div>
@@ -97,5 +117,9 @@
   $("#show-cb-modal").click(function () {
     $("#case-study-cb").removeAttr('hidden');
     $("#case-study-cb").removeClass('u-display-none');
+  })
+  $("#show-rld-mb-modal").click(function () {
+    $("#case-study-rld-mb").removeAttr('hidden');
+    $("#case-study-rld-mb").removeClass('u-display-none');
   })
 </script>

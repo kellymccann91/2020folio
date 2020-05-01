@@ -61,6 +61,14 @@
   }
 }
 
+.m-work-item-fourth {
+  margin-top: $spacing-shortest;
+  @media (min-width: $breakpoint-small) {
+    margin-top: -$spacing-short;
+    position: relative;
+  }
+}
+
 .m-work-item-content {
   color: $n-black;
   display: flex;
